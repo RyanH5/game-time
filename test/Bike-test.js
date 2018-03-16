@@ -125,6 +125,17 @@ describe('Bike', function () {
     assert.equal(bikeTwo.yDir, 0)
 
   });
+
+  it('player two moves left if left arrow key is pressed', function() {
+    let bikeTwo = new Bike(40, 20, 10, 5, 'green', 0, -1);
+
+    bikeTwo.pTwoDirection(e.keyCode == 37);
+
+    assert.equal(bikeTwo.xDir, -1);
+    assert.equal(bikeTwo.yDir, 0);
+
+
+  })
 });
 
 
