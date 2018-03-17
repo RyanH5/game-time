@@ -2,5 +2,6 @@
   border: 1px solid black;
   display: block;
   margin: auto;
-  background-image: url(../images/FreeVector-80s-Background.jpg);
+  background-image: url(../images/grid.jpg);
+  background-position: center;
 }
