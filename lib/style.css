@@ -1,5 +1,6 @@
 /* font-family: 'Raleway',
 sans-serif; */
+
 body {
   background-image: url(../images/tron-background.jpg);
   background-position: center;
@@ -36,10 +37,12 @@ body {
   width: 75%;
   text-align: center;
 }
+
 #D_Pad_One {
   width: 80%;
   margin-top: 40px;
 }
+
 #D_Pad_Two {
   width: 80%;
   margin-top: 40px;
@@ -78,10 +81,12 @@ body {
   width: 1424px;
   margin: auto;
 }
+
 #player1_lives {
   color: cyan;
   font-weight: 900;
 }
+
 #player2_lives {
   color: magenta;
   font-weight: 900;
