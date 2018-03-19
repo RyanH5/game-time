@@ -4,9 +4,17 @@ body {
   background-size: cover;
 }
 
+.player1_h2 {
+  color: cyan;
+}
+
+.player2_h2 {
+  color: magenta;
+}
+
 #game {
   border: 2px solid rgb(0, 255, 255);
-  display: block;
+  display: inline-block;
   margin: auto;
   background-image: url(../images/grid.jpg);
   background-position: center;
@@ -22,4 +30,42 @@ body {
   margin: auto;
   width: 75%;
   text-align: center;
+}
+
+.D_Pad {
+  width: 70%;
+}
+
+.player1__info {
+  display: inline-block;
+  width: 280px;
+  vertical-align: top;
+  text-align: center;
+}
+
+.player2__info {
+  display: inline-block;
+  width: 280px;
+  vertical-align: top;
+  text-align: center;
+}
+
+.player1__name {
+  color: cyan;
+}
+
+.player2__name {
+  color: magenta;
+}
+
+.main_wrapper {
+  width: 1424px;
+}
+
+.player1_lives {
+  color: cyan;
+}
+
+.player2_lives {
+  color: magenta;
 }

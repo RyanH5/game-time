@@ -11,10 +11,26 @@
       <img src="images/tron-logo.png" class="logo" alt="Tron Logo">
     </div>
   </header>
-  <canvas id="game"
-          height="700"
-          width="850">
-  </canvas>
+  <div class="main_wrapper">
+    <aside class="player1__info">
+      <h1 class="player1__name">PLAYER 1</h1>
+      <h2 class="player1_h2">LIVES: <span class="player1_lives">5</span></h2>
+      <div>
+        <img class="D_Pad" src="images/PlayerOneDefault.png">
+      </div>
+    </aside>
+    <canvas id="game"
+            height="635"
+            width="850">
+    </canvas>
+    <aside class="player2__info">
+      <h1 class="player2__name">PLAYER 2</h1>
+      <h2 class="player2_h2">LIVES: <span class="player2_lives">5</span></h2>
+      <div>
+        <img class="D_Pad" src="images/PlayerTwoDefault.png">
+      </div>
+    </aside>
+  </div>
   <script src="main.bundle.js"></script>
 </body>
 </html>
