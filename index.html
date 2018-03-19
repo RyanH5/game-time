@@ -3,6 +3,7 @@
 <head>
   <link rel="stylesheet" href="./lib/style.css">
   <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Orbitron:400,900|Raleway" rel="stylesheet">
   <title>Tron</title>
 </head>
 <body>
@@ -14,20 +15,20 @@
   <div class="main_wrapper">
     <aside class="player1__info">
       <h1 class="player1__name">PLAYER 1</h1>
-      <h2 class="player1_h2">LIVES: <span class="player1_lives">5</span></h2>
+      <h2 class="player1_h2">LIVES: <span id="player1_lives">5</span></h2>
       <div>
-        <img class="D_Pad" src="images/PlayerOneDefault.png">
+        <img id="D_Pad_One" src="images/PlayerOneDefault.png">
       </div>
     </aside>
     <canvas id="game"
-            height="636"
+            height="635"
             width="850">
     </canvas>
     <aside class="player2__info">
       <h1 class="player2__name">PLAYER 2</h1>
-      <h2 class="player2_h2">LIVES: <span class="player2_lives">5</span></h2>
+      <h2 class="player2_h2">LIVES: <span id="player2_lives">5</span></h2>
       <div>
-        <img class="D_Pad" src="images/PlayerTwoDefault.png">
+        <img id="D_Pad_Two" src="images/PlayerTwoDefault.png">
       </div>
     </aside>
   </div>
