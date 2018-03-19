@@ -1,3 +1,6 @@
+/* font-family: 'Raleway',
+sans-serif; */
+
 body {
   background-image: url(../images/tron-background.jpg);
   background-position: center;
@@ -6,10 +9,18 @@ body {
 
 .player1_h2 {
   color: cyan;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 400;
+  margin: 10px 0 25px 0;
+  text-shadow: 0px 0px 6px rgba(0, 255, 255, 1);
 }
 
 .player2_h2 {
   color: magenta;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 400;
+  margin: 10px 0 25px 0;
+  text-shadow: 0px 0px 6px rgba(255, 0, 255, 1);
 }
 
 #game {
@@ -34,6 +45,7 @@ body {
 
 .D_Pad {
   width: 70%;
+  margin-top: 40px;
 }
 
 .player1__info {
@@ -52,10 +64,22 @@ body {
 
 .player1__name {
   color: cyan;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 900;
+  font-size: 35px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-shadow: 0px 0px 6px rgba(0, 255, 255, 1);
 }
 
 .player2__name {
   color: magenta;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 900;
+  font-size: 35px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-shadow: 0px 0px 6px rgba(255, 0, 255, 1);
 }
 
 .main_wrapper {
@@ -64,8 +88,9 @@ body {
 
 .player1_lives {
   color: cyan;
+  font-weight: 900;
 }
 
 .player2_lives {
   color: magenta;
-}
+  font-weight: 900;
