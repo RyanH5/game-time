@@ -43,8 +43,13 @@ body {
   text-align: center;
 }
 
-.D_Pad {
-  width: 70%;
+#D_Pad_One {
+  width: 80%;
+  margin-top: 40px;
+}
+
+#D_Pad_Two {
+  width: 80%;
   margin-top: 40px;
 }
 
