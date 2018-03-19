@@ -89,6 +89,7 @@ body {
 
 .main_wrapper {
   width: 1424px;
+  margin: auto;
 }
 
 #player1_lives {
