@@ -6,7 +6,6 @@ body {
   background-position: center;
   background-size: cover;
 }
-
 .player1_h2 {
   color: cyan;
   font-family: 'Orbitron', sans-serif;
@@ -14,7 +13,6 @@ body {
   margin: 10px 0 25px 0;
   text-shadow: 0px 0px 6px rgba(0, 255, 255, 1);
 }
-
 .player2_h2 {
   color: magenta;
   font-family: 'Orbitron', sans-serif;
@@ -22,7 +20,6 @@ body {
   margin: 10px 0 25px 0;
   text-shadow: 0px 0px 6px rgba(255, 0, 255, 1);
 }
-
 #game {
   border: 2px solid rgb(0, 255, 255);
   display: inline-block;
@@ -31,12 +28,10 @@ body {
   background-position: center;
   box-shadow: 0px 0px 17px 0px rgba(0, 255, 255, 1);
 }
-
 .logo {
   width: 25%;
   padding: 15px 0 20px 0;
 }
-
 .header-container {
   margin: auto;
   width: 75%;
@@ -52,21 +47,18 @@ body {
   width: 80%;
   margin-top: 40px;
 }
-
 .player1__info {
   display: inline-block;
   width: 280px;
   vertical-align: top;
   text-align: center;
 }
-
 .player2__info {
   display: inline-block;
   width: 280px;
   vertical-align: top;
   text-align: center;
 }
-
 .player1__name {
   color: cyan;
   font-family: 'Orbitron', sans-serif;
@@ -76,7 +68,6 @@ body {
   margin-bottom: 10px;
   text-shadow: 0px 0px 6px rgba(0, 255, 255, 1);
 }
-
 .player2__name {
   color: magenta;
   font-family: 'Orbitron', sans-serif;
@@ -86,7 +77,6 @@ body {
   margin-bottom: 10px;
   text-shadow: 0px 0px 6px rgba(255, 0, 255, 1);
 }
-
 .main_wrapper {
   width: 1424px;
   margin: auto;
