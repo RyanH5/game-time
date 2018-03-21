@@ -336,9 +336,9 @@ describe('Bike', function () {
 
   });
 
-  it('bike crash when they hit', function () {
+  it('bikes crash when they collide', function () {
     let bike = new Bike(92, 25, 10, 0, 0, -3, 'yellow');
-    let bikeTwo = new Bike(90, 41, 10, 0, -3, 0, 'red');
+    let bikeTwo = new Bike(86, 17, 10, 0, -3, 0, 'red');
     let bikeThree = new Bike(30, 135, 10, 0, -3, 0, 'yellow');
     let bikeFour = new Bike(70, 400, 10, 0, 0, -3, 'purple');
     assert.equal(bike.crashed, false);
@@ -346,6 +346,10 @@ describe('Bike', function () {
     assert.equal(bike.crashed, false);
     assert.equal(bikeTwo.crashed, false);
 
+    bike.move();
+    bikeTwo.move();
+    bike.move();
+    bikeTwo.move();
     bike.move();
     bikeTwo.move();
     bike.collisionDetection(bikeTwo);
@@ -356,9 +360,85 @@ describe('Bike', function () {
     bikeFour.collisionDetection(bikeThree);
 
     assert.equal(bike.crashed, true)
-    assert.equal(bikeTwo.crashed, false);
+    assert.equal(bikeTwo.crashed, true);
     assert.equal(bikeThree.crashed, false)
     assert.equal(bikeFour.crashed, false);
+
+  });
+
+  // it('bike crashes when it hits itself', function () {
+  //   let bike = new Bike(90, 624, 10, 0, 0, 3, 'yellow');
+  //   let bikeTwo = new Bike(838, 50, 10, 0, 3, 0, 'red');
+  //   assert.equal(bike.crashed, false);
+  //   assert.equal(bike.crashed, false);
+  //   console.log(bikeTwo.x, bikeTwo.y)
+
+  //   bike.move();
+  //   bike.changeDirection(3, 0);
+  //   bike.move();
+  //   bike.changeDirection(0, 3);
+  //   bike.distanceBetweenSelf();
+  //   bikeTwo.move();
+  //   bikeTwo.distanceBetweenSelf();
+  //   bikeTwo.move();
+  //   bikeTwo.distanceBetweenSelf();
+  //   console.log(bikeTwo.x, bikeTwo.y);
+  //   bikeTwo.changeDirection(0, 3);
+  //   bikeTwo.move();
+  //   bikeTwo.distanceBetweenSelf();
+  //   console.log(bikeTwo.x, bikeTwo.y);
+  //   bikeTwo.changeDirection(-3, 0);
+  //   bikeTwo.move();
+  //   bikeTwo.distanceBetweenSelf();
+  //   console.log(bikeTwo.x, bikeTwo.y);
+  //   bikeTwo.changeDirection(0, -3);
+  //   bikeTwo.move();
+  //   bikeTwo.distanceBetweenSelf();
+  //   console.log(bikeTwo.x, bikeTwo.y);
+  //   bikeTwo.changeDirection(3, 0);
+  //   bikeTwo.move();
+  //   bikeTwo.distanceBetweenSelf();
+  //   console.log(bikeTwo.x, bikeTwo.y);
+  //   console.log(bikeTwo.tail)
+  //   bikeTwo.distanceBetweenSelf();
+
+  //   assert.equal(bike.crashed, false);
+  //   assert.equal(bikeTwo.crashed, true);
+
+  // });
+
+  it('bike can not make 180 degree direction change', function () {
+    let bike = new Bike(90, 624, 10, 0, 0, 3, 'yellow');
+
+    assert.equal(bike.yDir, 3)
+    assert.equal(bike.y, 624)
+
+    bike.move();
+    bike.changeDirection(0, -3);
+    bike.move();
+
+    assert.equal(bike.yDir, 3)
+    assert.equal(bike.y, 630);
+
+  });
+
+  it('bikes velocity is the absolute value of the bikes xDirerction or yDirection, whichever is higher', function () {
+    let bike = new Bike(90, 624, 10, 0, 0, 3, 'yellow');
+
+    assert.equal(bike.xDir, 0);
+    assert.equal(bike.yDir, 3);
+    assert.equal(bike.x, 90);
+    assert.equal(bike.y, 624);
+    assert.equal(bike.getVelocity(), 3);
+
+    bike.changeDirection(-3, 0);
+    bike.move();
+
+    assert.equal(bike.xDir, -3);
+    assert.equal(bike.yDir, 0);
+    assert.equal(bike.x, 87);
+    assert.equal(bike.y, 624);
+    assert.equal(bike.getVelocity(), 3);
 
   });
 

@@ -1,10 +1,12 @@
-/* font-family: 'Raleway',
-sans-serif; */
+* {
+  box-sizing: border-box;
+}
 
 body {
   background-image: url(../images/tron-background.jpg);
   background-position: center;
   background-size: cover;
+  ;
 }
 .player1_h2 {
   color: cyan;
@@ -90,4 +92,31 @@ body {
 #player2_lives {
   color: magenta;
   font-weight: 900;
+}
+
+.direction-paragraph {
+  font-family: 'Raleway',sans-serif;
+  color: #FFF;
+  font-size: 16px;
+  line-height: 28px;
+  padding: 10px 20px;
+  margin-top: 5px;
+}
+
+.direction-header {
+  font-family: 'Orbitron', sans-serif;
+  color: cyan;
+  margin: 10px 0;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.directions {
+ width: 855px;
+ margin: 60px auto 30px auto;
+ padding: 10px;
+ background-color: rgba(0, 0, 0, 0.75);
+ border: 2px solid rgba(0, 255, 255, 0.5);
+ box-shadow: 0px 0px 17px 0px rgba(0, 255, 255, 1);
+
 }
