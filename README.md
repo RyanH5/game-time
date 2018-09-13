@@ -1,5 +1,6 @@
 # Game Time Starter Kit (FE - Module 2)
 
+<img src="Screen Shot 2018-09-13 at 10.28.17 AM.png" />
 Basic Game Time starter kit.
 
 ## Initial Setup
